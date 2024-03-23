@@ -1,0 +1,12 @@
+.title {
+    text-align: center;
+    padding: 20px;
+}
+
+.box {
+    margin-bottom: 30px;
+}
+
+.cont {
+    display: inline-block;
+}

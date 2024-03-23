@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">Works log</h1>
+
+{% for job_ in jobs%}
+<div class="box">
+    <h2>Action # {{ job_.id }}</h2>
+    <div>
+        <div class="cont">
+            <h5>Title of activity</h5>
+            <h5>{{ job_.job }}</h5>
+        </div>
+        <div class="cont">
+            <h5>Team leader</h5>
+            <h5>{{ users[job_.team_leader].name }}</h5>
+        </div>
+    </div>
+
+</div>
+
+{% endfor %}
+
+{% endblock %}
